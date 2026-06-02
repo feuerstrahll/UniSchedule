@@ -963,7 +963,6 @@ class _LessonList extends StatelessWidget {
     final days = grouped.entries.toList()
       ..sort((a, b) => a.key.compareTo(b.key));
     final children = <Widget>[];
-    var isFirstLesson = true;
 
     for (final day in days) {
       final dayLessons = day.value;
@@ -974,10 +973,9 @@ class _LessonList extends StatelessWidget {
             lesson: dayLessons[index],
             isFirst: index == 0,
             isLast: index == dayLessons.length - 1,
-            isFeatured: isFirstLesson,
+            isFeatured: false,
           ),
         );
-        isFirstLesson = false;
       }
     }
 
