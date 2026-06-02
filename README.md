@@ -41,8 +41,8 @@ Windows
 Склонировать репозиторий:
 
 ```bash
-git clone https://github.com/vputt/temp.git
-cd temp
+git clone https://github.com/feuerstrahll/UniSchedule.git
+cd UniSchedule
 ```
 
 Установить зависимости:
